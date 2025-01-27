@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Smooch+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow: visible;
+    color: #090808;
+    min-height: 100vh;
+}
+.hero-header{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #bcbcc0;
+}
+.wrapper{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImage{
+    height: 45px;
+    width: 45px;
+    
+}
+.logo .logoText{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.logo span{
+    color: #c60000;
+    font-weight: 700;
+}
+nav .togglebtn{
+    width: 35px;
+    height :35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #c60000;
+    margin: 5px 0;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+    color: #090808;
+    margin-right: 2.5rem;
+    transition: 0.3s;
+    
+}
+nav .navlinks li a:hover{
+    border-bottom: 2px solid #c60000;
+    font-size: 19px;
+    font-weight: 650;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+.container .heroPic{
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #090808;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+}
+.heroPic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    scale: 1.1;
+}
+.heroPic img:hover{
+    transform: scale(1.2);
+}
+.heroText{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.heroText h5 span{
+    color: #c60000;
+    font-size: 16px;
+}
+.heroText h1{
+    font-size: 3rem;
+    color: #c60000;
+}
+.btnGroup{
+    margin: 45px 0;
+}
+.btnGroup a{
+    border-color: white;
+    color: white;
+    background: #090808;
+    padding: 12px 25px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid white;
+    box-shadow: 0 10px 10px -8px rgba(0 0 0/ 78%);
+}
+.btnGroup .btnActive{
+    border-color: #c60000;
+}
+.btnGroup :hover{
+    border-color: white;
+    background: #c60000;
+}
+.social{
+    background: rgba(255, 255, 255, 0.508);
+    width: 85%;
+    border-radius: 6px;
+    padding: 10px 20px;
+    align-content: center;
+}
+.social p{
+    margin-bottom: 5px;
+
+}
+.social a{
+    text-decoration: none;
+    color: #090808;
+    font-size:35px;
+    transition: 0.3s;
+}
+.social .linkedIn:hover{
+    color: #0077B5;
+}
+.social .instagram:hover{
+   color: #E4405F;
+}
+.social .facebook:hover{
+    color: #1877F2;
+}
+.social .whatsApp:hover{
+    color: #1ca84f;
+}
+.social a i{
+    margin: 0 20px;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/contactBG.jpg);
+    background-size: cover;
+}
+.contactContainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #afafb6;
+    margin-top: 0;
+}
+.container2{
+    width: 80%;
+    background: rgba(255, 255, 255, 0.468);
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.container2 .content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container2 .content2 .leftSide{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.content2 .leftSide::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width:2px;
+    right: -15px;
+    transform: translateY(-50%);
+    top: 50%;
+
+    background: #c60000;
+}
+.container2 .content2 .leftSide .details{
+    margin-top: 14px;
+    text-align: center;
+}
+.container2 .content2 .leftSide .details i{
+    font-size: 30px;
+    color: #090808;
+    margin: 10px;
+}
+.content2 .leftSide .details .text1,
+.content2 .leftSide .details .text2{
+    font-size: 14px;
+    color: #c60000;
+}
+.content2 a{
+    text-decoration: none;
+}
+.container2 .content2 .leftSide .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container2 .content2 .rightSide{
+    width: 75%;
+    margin-left: 75px;
+}
+.content2 .rightSide .topicText{
+    font-size: 23px;
+    font-weight: 600;
+    color: #090808;
+}
+.rightSide .inputBox{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.rightSide .inputBox input,
+.rightSide .inputBox textarea{
+    height:100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #afafb6;
+    border-radius: 6px;
+    padding: 0 15px;
+    
+}
+.rightSide .messageBox{
+    min-height: 110px;
+    width: 100%;
+    margin-top: 6px;
+}
+.rightSide .button{
+    margin-top: 6px;
+    display: inline-block;
+}
+.rightSide .button input[type="submit"]{
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #090808;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.rightSide .button input[type="submit"]:hover{
+    background: #09080893;
+    color: white;
+    border: solid 2px #c60000;
+
+}
+footer {
+    background-color: #f0f0f0; /* Light Gray */
+    padding: 10px 0;
+    text-align: center;
+    color: #999999; /* Gray */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .togglebtn {
+        display: block;
+    }
+
+    nav .navlinks {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav .navlinks.active {
+        display: block;
+    }
+
+    nav .navlinks li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .heroPic {
+        width: 200px !important;
+        margin-bottom: 2rem;
+    }
+
+    .heroText {
+        text-align: center;
+    }
+
+    .heroText h1 {
+        font-size: 2rem;
+    }
+
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .container2 {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .content2 {
+        flex-direction: column;
+    }
+
+    .leftSide {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .leftSide::before {
+        display: none;
+    }
+
+    .details {
+        margin: 15px;
+        width: 40%;
+    }
+
+    .rightSide {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoText {
+        font-size: 24px;
+    }
+
+    .heroText h1 {
+        font-size: 1.8rem;
+    }
+
+    .btnGroup a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .social {
+        width: 100%;
+    }
+
+    .inputBox {
+        height: 40px;
+    }
+
+    .button input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+
+    .heroText h1 {
+        font-size: 4rem;
+    }
+
+    .container2 {
+        max-width: 1200px;
+    }
+}
