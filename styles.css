@@ -206,6 +206,7 @@ nav .divContainer
     align-items: start;
 }
 
+
 .tech-stack h2,
 .certifications h2 {
     text-align: center;
@@ -757,3 +758,29 @@ nav .divContainer
     display: flexbox;
     text-align: center;;
   }
+
+
+  /* Add to contact section styles */
+/* Inside your styles.css file */
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ensures inputs take full width of parent */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+/* Media Queries (if you need different behavior on specific screen sizes) */
+@media (max-width: 768px) { /* Example breakpoint - adjust as needed */
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 500px) { /* Example breakpoint for even smaller screens */
+    .form-group input,
+    .form-group textarea {
+        font-size: 12px; /* Further reduce font size if necessary */
+    }
+}
+
