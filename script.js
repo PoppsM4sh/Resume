@@ -136,3 +136,13 @@ function generateResponse(userInput) {
 document.querySelector('.text').addEventListener('animationend', function() {
     this.classList.add('done-typing');
   });
+
+document.querySelectorAll('.rightS ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+      // Check if mobile menu is open
+      if(document.querySelector('.rightS ul').classList.contains('active')) {
+          // Remove active class to close menu
+          document.querySelector('.rightS ul').classList.remove('active');
+      }
+  });
+});
