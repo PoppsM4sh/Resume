@@ -643,7 +643,7 @@ nav .divContainer
 }
 /* Media Queries for Responsiveness */
 
-@media (max-width: 500px) { /* Another breakpoint for even smaller screens */
+@media (max-width: 550px) { /* Another breakpoint for even smaller screens */
     .heroText h1 {
         font-size: 2em;
     }
@@ -791,7 +791,7 @@ nav .divContainer
     }
 }
 
-@media (max-width: 500px) { /* Example breakpoint for even smaller screens */
+@media (max-width: 550px) { /* Example breakpoint for even smaller screens */
     .form-group input,
     .form-group textarea {
         font-size: 12px; /* Further reduce font size if necessary */
@@ -875,7 +875,7 @@ nav .divContainer
     height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    object-fit: cover; /* Ensure images maintain aspect ratio */
+    object-fit: contain; /* Ensure images maintain aspect ratio */
     margin-bottom: 10px; /* Space between image and text */
 }
 
@@ -913,6 +913,10 @@ nav .divContainer
     .project-card {
         width: calc(50% - 20px);
     }
+    .project-card img {
+        max-height: 625px; /* Slightly smaller height for tablets */
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -936,5 +940,8 @@ nav .divContainer
 
     .project-card p {
         font-size: 0.8rem;
+    }
+    .project-card img {
+        max-height: 400px; /* Even smaller height for mobile devices */
     }
 }
