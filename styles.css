@@ -805,9 +805,9 @@ nav .divContainer
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Limit container width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add consistent horizontal padding */
 }
 
 .section-title {
@@ -822,14 +822,15 @@ nav .divContainer
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    padding: 20px;
-    background: #00808039;
-    //*background: rgb(244, 244, 244);*//
+    padding: 20px; /* Internal padding for the category container */
+    background: #00808039; /* Light teal background */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease;
-    margin-bottom: 30px; /* Gap between categories */
-    width: 100%;
+    margin: 0 auto 30px auto; /* Consistent top and bottom margins, centered horizontally */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Ensure it doesn't exceed the container width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Ensure the last category has some bottom margin */
@@ -852,6 +853,8 @@ nav .divContainer
     flex-wrap: wrap; /* Allow wrapping for responsiveness */
     justify-content: center; /* Center project cards */
     gap: 20px; /* Space between project cards */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Project Card Styling */
@@ -863,6 +866,8 @@ nav .divContainer
     overflow: hidden;
     transition: transform 0.3s ease;
     text-align: center; /* Center content inside the card */
+    padding: 15px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .project-card img {
@@ -870,6 +875,8 @@ nav .divContainer
     height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 .project-card h4 {
@@ -881,7 +888,8 @@ nav .divContainer
 .project-card p {
     font-size: 0.9rem;
     color: #666;
-    padding: 0 10px;
+    padding: 0 10px; /* Add horizontal padding for text */
+    margin-bottom: 15px; /* Space between text and button */
 }
 
 .project-card .btn {
@@ -901,13 +909,32 @@ nav .divContainer
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* On tablets, show two cards per row */
     .project-card {
-        width: calc(50% - 20px); /* Two cards per row on medium screens */
+        width: calc(50% - 20px);
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 550px) {
+    /* On mobile devices, show one card per row */
     .project-card {
-        width: 100%; /* One card per row on small screens */
+        width: 100%; /* Full width */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+    }
+
+    .project-card h4 {
+        font-size: 1rem;
+    }
+
+    .project-card p {
+        font-size: 0.8rem;
     }
 }
