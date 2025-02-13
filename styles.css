@@ -823,11 +823,13 @@ nav .divContainer
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     padding: 20px;
-    background: rgb(244, 244, 244);
+    background: #00808039;
+    //*background: rgb(244, 244, 244);*//
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     margin-bottom: 30px; /* Gap between categories */
+    width: 100%;
 }
 
 /* Ensure the last category has some bottom margin */
