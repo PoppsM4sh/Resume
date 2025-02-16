@@ -80,7 +80,7 @@ nav .divContainer
     object-fit: cover; /* Prevents image distortion */
     display: block; /* Prevents image from creating extra space */
     margin: 0 auto; /* Centers image horizontally */
-    transform: scale(1.2);
+    transform: scale(1.2)
 }
 .heroPic img:hover{
     transform: scale(1.4);
@@ -496,18 +496,9 @@ nav .divContainer
     .tech-item i {
         font-size: 1.2em;
     }
-    .slide-indicators span{
-        width: 7px;
-        height: 7px;
-    }
-    .prev-btn,
-    .next-btn{
-       transform: scale(0.6);
-       
-    }
-
-   
 }
+
+
 /* Contact Section */
 #contact {
     padding: 80px 0;
