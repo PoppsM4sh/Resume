@@ -498,8 +498,8 @@ nav .divContainer
     }
 
     .slide-indicators span {
-        width: 6px;
-        height: 6px;
+        width: 3px;
+        height: 3px;
         border-radius: 50%;
         background: #ddd;
         cursor: pointer;
