@@ -395,7 +395,7 @@ nav .divContainer
 }
 
 /* Certifications Slider */
-.certifications {
+.certificates {
     position: relative;
     overflow: hidden;
 }
@@ -431,6 +431,10 @@ nav .divContainer
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+    position: absolute; /* Add this to position controls on top of the slider */
+    bottom: 20px; /* Adjust bottom position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 .prev-btn,
@@ -471,14 +475,14 @@ nav .divContainer
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .tech-stack {
         border-right: none;
         padding-right: 0;
         border-bottom: 2px solid #ddd;
         padding-bottom: 30px;
     }
-    
+
     .certification-slider {
         height: 400px;
     }
@@ -488,11 +492,11 @@ nav .divContainer
     .certification-slider {
         height: 300px;
     }
-    
+
     .tech-item {
         padding: 10px;
     }
-    
+
     .tech-item i {
         font-size: 1.2em;
     }
