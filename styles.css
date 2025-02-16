@@ -504,6 +504,11 @@ nav .divContainer
         background: #ddd;
         cursor: pointer;
     }
+    .prev-btn,
+    .next-btn
+    {
+        padding: 5px 10px;
+    }
 }
 
 
