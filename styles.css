@@ -496,6 +496,14 @@ nav .divContainer
     .tech-item i {
         font-size: 1.2em;
     }
+
+    .slide-indicators span {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ddd;
+        cursor: pointer;
+    }
 }
 
 
